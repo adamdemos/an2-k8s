@@ -1,9 +1,10 @@
-﻿{
+{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost"
+      "applicationUrl": "http://localhost",
+      "sslPort": 0
     }
   },
   "profiles": {
@@ -17,10 +18,16 @@
     "Demo1": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://an1-winclt01:80",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "http://an1-winclt01:80"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
     }
   }
 }
